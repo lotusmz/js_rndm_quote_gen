@@ -73,11 +73,10 @@ function printQuote(){
 
   html += `</p>`;
 
-  return html;
-}
+  return document.getElementById('quote-box').innerHTML = html;
+} 
 
-document.getElementById('quote-box').innerHTML = printQuote(); 
-
+printQuote();
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
